@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      }
+      p {
+        letter-spacing: 0.5px;
+        
+        line-height: 1.5 rem;
+        text-transform: uppercase;
+
+        text-shadow: 2px 2px 5px red;
+      }
+      span {
+          color: white;
+          text-shadow: 1px 1px 2px black;
+          
+      }
+      #good{
+          box-shadow:5px 5px 10px rgb(140, 222, 255);
+          color: blue;
+      }
+      div {
+          height: 200px;
+          width: 200px;
+          border: 2px soild black !important;
+          background-color: pink;
+          padding: 10px;
+         
+          overflow: hidden;
+          opacity: 0.9;
+          border-radius: 10px 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>CSS Fonts</h3>
+    <p>Trying to apply different fonts.</p>
+    <br />
+    <p>I <em>never</em> said he stole your money</p>
+    <p>I never said <em>he</em> stole your money</p>
+    <p>I never said he stole <em>your</em> money</p>
+    <p>This is my <strong><em>BLOOD MONEY</em></strong></p>
+    <span>One Love</span> 
+    <span>two love</span>
+    <p id="good">I left Cognizant for own good!</p>
+
+    <div>Hi I am div. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis nisi dolores laboriosam pariatur numquam voluptates ullam laudantium excepturi, libero explicabo consectetur illo quod earum quidem!</div>
+  </body>
+</html>

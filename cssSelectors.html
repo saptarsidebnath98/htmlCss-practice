@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+      h1 {
+        text-shadow: 1px 1px 2px rgb(253, 9, 9);
+      }
+      main div {
+        background-color: aquamarine;
+      }
+      main > div {
+        background-color: pink; /* This rule will only select divs with a class of child */
+      }
+      main > div > div {
+        background-color: rgb(
+          255,
+          145,
+          0
+        ); /* This rule will only select divs with a class of grand-child */
+      }
+
+      .group1 + div {
+        background-color: green; /* This rule will only select the div with the class child group2 */
+      }
+
+      .group1 + div + div {
+        background-color: red; /* This rule will only select the div with the class child group3 */
+      }
+
+      .group1 ~ div {
+        font-weight: bold; /* This rule will select all of .group1's siblings - in this case the 2nd and 3rd .child divs */
+      }
+      a {
+        text-decoration: underline;
+      }
+      a:link {
+        color: green;
+      }
+      a:visited {
+        color: red;
+      }
+      p::first-line{
+        color: green; /*every first line in p will be green in color */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selectors</h1>
+    <main class="parent">
+      <div class="child group1">
+        child group1
+        <div class="grand-child group1">grand-child group1</div>
+      </div>
+      <div class="child group2">
+        child group2
+        <div class="grand-child group2">grand-child group2</div>
+      </div>
+      <div class="child group3">
+        child group3
+        <div class="grand-child group3">grand-child group3</div>
+      </div>
+      <a href="http://www.google.com" class="hyperlink" target="new"
+        >www.google.com</a
+      >
+      <a href="http://www.yahoo.com" class="hyperlink" target="new"
+        >www.yahoo.com</a
+      >
+      <a href="http://www.redshift.com" class="hyperlink" target="new"
+        >www.redshift.com</a
+      >
+    </main>
+    <p>This is first line. <br>
+        this is second line. <br>
+        this is third line.
+    </p>
+    
+  </body>
+</html>
