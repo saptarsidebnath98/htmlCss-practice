@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioing</title>
+    <style>
+        .container {
+            height: 1000px;
+            width: 400px;
+            background-color: aquamarine;
+            position: absolute;
+        }
+        .first-child {
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+            position: relative;
+            top: 40px;
+            left: 40px;
+            
+            
+        }
+        .second-child {
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+        }
+        .third-child {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            position: sticky;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first-child">
+            one
+        </div>
+        <div class="second-child">
+            two
+        </div>
+        <div class="third-child">
+            three
+        </div>
+    </div>
+</body>
+</html>
