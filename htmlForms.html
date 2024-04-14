@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h3>Forms</h3>
+    <form action= "#" method="get">
+        <label for="name">Name of the Candidate:</label>
+        <input type="text" id="name" placeholder="Enter your name here..." name="name">
+        <button class="greetingBtn">Greet me!</button>
+    </form>
+    <h1 class="greeting-output"></h1>
+
+    <label for="userMail">User Email ID:</label>
+    <input type="text" id="userMail" name="userMail" placeholder="...@gmail.com">
+
+    <br>
+    <label for="feedback">Your feedback:</label>
+    <br>
+    <textarea name="feedback" id="feedback" cols="30" rows="10">Please post your feedback here....</textarea>
+
+    <select name="Car">
+        <option value="mercedes">Mercedes</option>
+        <option value="tesla" selected>Tesla</option>
+        <option value="volvo">Volvo</option>
+        <option value="bmw">BMW</option>
+        <option value="mini">Mini</option>
+        <option value="ford">Ford</option>
+      </select>
+      
+      <br>
+      <select name="fashion">
+        <optgroup label="Clothing">
+          <option value="t_shirt">T-Shirts</option>
+          <option value="sweater">Sweaters</option>
+          <option value="coats">Coats</option>
+        </optgroup>
+        <optgroup label="Foot Wear">
+          <option value="sneakers">Sneakers</option>
+          <option value="boots">Boots</option>
+          <option value="sandals">Sandals</option>
+        </optgroup>
+      </select>
+      
+
+    <script>
+        const name = document.querySelector("#name");
+        const greetBtn = document.querySelector(".greetingBtn");
+        const output = document.querySelector(".greeting-output");
+
+        greetBtn.addEventListener('click',()=>{
+            output.textContent = `Hi! ${name.value}`;
+        })
+    </script>
+</body>
+</html>
