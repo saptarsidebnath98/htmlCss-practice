@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID implicit & explicit</title>
+    <style>
+        .container {
+            display: grid;
+            /*row-gap: 20px;
+            column-gap: 30px;*/
+            grid-template-columns: 200px 200px;
+            grid-template-rows: 100px 200px;
+            grid-auto-rows: 200px;
+            grid-auto-columns: 500px;
+        }
+        .item{
+            background-color: aqua;
+            border: 1px soild black;
+        }
+        .itemFour{
+            background-color: aqua;
+
+            display: grid;
+            grid-template-rows: 50px 50px;
+            grid-template-columns: 50px 50px;
+            
+        }
+        .items-of-item {
+            background-color: pink;
+            border: 1px soild black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="itemFour">
+            <div class="items-of-item">Item 4.1</div>
+            <div class="items-of-item">Item 4.2</div>
+            <div class="items-of-item">Item 4.3</div>
+            <div class="items-of-item">Item 4.4</div>
+        </div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+</body>
+</html>

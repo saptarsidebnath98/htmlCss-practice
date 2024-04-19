@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRID Positioning 2</title>
+    <style>
+      .container {
+        display: inline-grid;
+        grid-template: 80px 80px 80px 80px 80px / 80px 80px 80px 80px 80px;
+        background-color: lightblue;
+        grid-template-areas:
+          
+          "living-room living-room living-room living-room living-room"
+          "living-room living-room living-room living-room living-room"
+          "bedroom bedroom bathroom kitchen kitchen"
+          "bedroom bedroom bathroom kitchen kitchen"
+          "closet closet . garage garage";
+      }
+      .room {
+        border: 2px solid black;
+        font-size: 70%;
+        text-align: center;
+      }
+      #living-room {
+        grid-area: living-room;
+      }
+      #bathroom {
+        grid-area: bathroom;
+      }
+      #closet {
+        grid-area: closet;
+      }
+      #kitchen {
+        grid-area: kitchen;
+      }
+      #bedroom {
+        grid-area: bedroom;
+      }
+      #garage {
+        grid-area: garage;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="room" id="living-room">Living Room</div>
+      <div class="room" id="kitchen">Kitchen</div>
+      <div class="room" id="bedroom">Bedroom</div>
+      <div class="room" id="bathroom">Bathroom</div>
+      <div class="room" id="closet">Closet</div>
+      <div class="room" id="garage">Garage</div>
+    </div>
+  </body>
+</html>
