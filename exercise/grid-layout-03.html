@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grid-layout-03</title>
     <style>
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+      }
       .container {
         display: grid;
-        width: 100vw;
-        height: 100vh;
+        height: 100%;
+        width: 100%;
         grid-template-columns: 1fr 4fr;
         grid-template-rows: 1fr 0.5fr 7fr 0.5fr;
         gap: 4px;
@@ -18,34 +25,37 @@
           "sidebar menubar"
           "sidebar article"
           "footer footer";
+
+        resize: both;
+        overflow: auto;
       }
       .container div {
-          color: white;
-          font-weight: bold;
+        color: white;
+        font-weight: bold;
         font-size: 70%;
         text-align: center;
       }
       .header {
         grid-area: header;
-        background-color: grey;
+        background-color: rgb(77, 77, 77);
 
         display: grid;
       }
       .sidebar {
         grid-area: sidebar;
-        background-color: red;
+        background-color: rgb(179, 1, 1);
       }
       .menubar {
         grid-area: menubar;
-        background-color: red;
+        background-color: rgb(179, 1, 1);
       }
       .article {
         grid-area: article;
-        background-color: burlywood;
+        background-color: rgb(159, 208, 236);
       }
       .footer {
         grid-area: footer;
-        background-color: grey;
+        background-color: rgb(77, 77, 77);
       }
     </style>
   </head>
@@ -55,7 +65,7 @@
       <div class="sidebar">sidebar</div>
       <div class="menubar">menubar</div>
       <div class="article">article</div>
-      <div class="footer">footer</div>
+      <div class="footer">Copyright &copy; Saptarsi Debnath</div>
     </div>
   </body>
 </html>
