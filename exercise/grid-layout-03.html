@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid-layout-03</title>
+    <style>
+      .container {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr 0.5fr 7fr 0.5fr;
+        gap: 4px;
+        grid-template-areas:
+          "header header"
+          "sidebar menubar"
+          "sidebar article"
+          "footer footer";
+      }
+      .container div {
+          color: white;
+          font-weight: bold;
+        font-size: 70%;
+        text-align: center;
+      }
+      .header {
+        grid-area: header;
+        background-color: grey;
+
+        display: grid;
+      }
+      .sidebar {
+        grid-area: sidebar;
+        background-color: red;
+      }
+      .menubar {
+        grid-area: menubar;
+        background-color: red;
+      }
+      .article {
+        grid-area: article;
+        background-color: burlywood;
+      }
+      .footer {
+        grid-area: footer;
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">header</div>
+      <div class="sidebar">sidebar</div>
+      <div class="menubar">menubar</div>
+      <div class="article">article</div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>
