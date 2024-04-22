@@ -5,66 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grid-layout-03</title>
-    <style>
-      html,
-      body {
-        height: 100%;
-        width: 100%;
-        margin: 0%;
-        padding: 0%;
-      }
-      .container {
-        display: grid;
-        height: 100%;
-        width: 100%;
-        grid-template-columns: 1fr 4fr;
-        grid-template-rows: 1fr 0.5fr 7fr 0.5fr;
-        gap: 4px;
-        grid-template-areas:
-          "header header"
-          "sidebar menubar"
-          "sidebar article"
-          "footer footer";
-
-        resize: both;
-        overflow: auto;
-      }
-      .container div {
-        color: white;
-        font-weight: bold;
-        font-size: 70%;
-        text-align: center;
-      }
-      .header {
-        grid-area: header;
-        background-color: rgb(77, 77, 77);
-
-        display: grid;
-      }
-      .sidebar {
-        grid-area: sidebar;
-        background-color: rgb(179, 1, 1);
-      }
-      .menubar {
-        grid-area: menubar;
-        background-color: rgb(179, 1, 1);
-      }
-      .article {
-        grid-area: article;
-        background-color: rgb(159, 208, 236);
-      }
-      .footer {
-        grid-area: footer;
-        background-color: rgb(77, 77, 77);
-      }
-    </style>
+    <link rel="stylesheet" href="/exercise/grid-layout-03.css" />
   </head>
   <body>
     <div class="container">
-      <div class="header">header</div>
-      <div class="sidebar">sidebar</div>
-      <div class="menubar">menubar</div>
-      <div class="article">article</div>
+      <div class="header">
+        <div class="headerLogo">Header Logo</div>
+        <div class="headerLinks">
+          <ul>
+            <li class="nav-items" id="headerLink1">header Link1</li>
+            <li class="nav-items" id="headerLink2">header Link2</li>
+            <li class="nav-items" id="headerLink3">header Link3</li>
+            <li class="nav-items" id="headerLink4">header Link4</li>
+          </ul>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="sidebarItems" id="placeholderImage">Placeholder Image</div>
+        <div class="sidebarItems">box1</div>
+        <div class="sidebarItems">box2</div>
+        <div class="sidebarItems">box3</div>
+      </div>
+      <div class="menubar">
+        <ul>
+          <li class="menubar-items">LATEST ARTICLE</li>
+          <li class="menubar-items">MOST VIEWS</li>
+          <li class="menubar-items">FEATURED</li>
+        </ul>
+      </div>
+      <div class="article">
+        <div class="artical-div">
+          <h3>Article Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+            dolores. These are the container items that are used as cards here.
+            The grid properties help to do this project as per the requirement.
+          </p>
+        </div>
+        <div class="artical-div">
+          <h3>Article Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+            dolores. These are the container items that are used as cards here.
+            The grid properties help to do this project as per the requirement.
+          </p>
+        </div>
+        <div class="artical-div">
+          <h3>Article Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+            dolores. These are the container items that are used as cards here.
+            The grid properties help to do this project as per the requirement.
+          </p>
+        </div>
+        <div class="artical-div">
+          <h3>Article Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+            dolores. These are the container items that are used as cards here.
+            The grid properties help to do this project as per the requirement.
+          </p>
+        </div>
+        <div class="artical-div">
+          <h3>Article Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+            dolores. These are the container items that are used as cards here.
+            The grid properties help to do this project as per the requirement.
+          </p>
+        </div>
+        <div class="artical-div">
+          <h3>Article Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+            dolores. These are the container items that are used as cards here.
+            The grid properties help to do this project as per the requirement.
+          </p>
+        </div>
+        <div class="artical-div">
+          <h3>Article Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+            dolores. These are the container items that are used as cards here.
+            The grid properties help to do this project as per the requirement.
+          </p>
+        </div>
+        <div class="artical-div">
+          <h3>Article Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+            dolores. These are the container items that are used as cards here.
+            The grid properties help to do this project as per the requirement.
+          </p>
+        </div>
+        <div class="artical-div">
+          <h3>Article Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+            dolores. These are the container items that are used as cards here.
+            The grid properties help to do this project as per the requirement.
+          </p>
+        </div>
+        <div class="artical-div">
+          <h3>Article Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+            dolores. These are the container items that are used as cards here.
+            The grid properties help to do this project as per the requirement.
+          </p>
+        </div>
+        <div class="artical-div">
+          <h3>Article Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+            dolores. These are the container items that are used as cards here.
+            The grid properties help to do this project as per the requirement.
+          </p>
+        </div>
+        <div class="artical-div">
+          <h3>Article Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+            dolores. These are the container items that are used as cards here.
+            The grid properties help to do this project as per the requirement.
+          </p>
+        </div>
+      </div>
       <div class="footer">Copyright &copy; Saptarsi Debnath</div>
     </div>
   </body>

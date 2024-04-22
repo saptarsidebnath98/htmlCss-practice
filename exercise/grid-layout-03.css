@@ -1,0 +1,144 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  font-family: Helvetica, sans-serif;
+}
+.container {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 0.7fr 7fr 0.5fr;
+  gap: 4px;
+  grid-template-areas:
+    "header header"
+    "sidebar menubar"
+    "sidebar article"
+    "footer footer";
+
+  resize: both;
+  overflow: auto;
+}
+.container div {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.header {
+  grid-area: header;
+  background-color: rgb(77, 77, 77);
+
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 1fr 4fr;
+}
+.header > .headerLogo {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+
+  font-size: 30px;
+  padding: 10px;
+}
+.headerLinks > ul {
+  margin: 0%;
+  height: 100%;
+  list-style-type: none;
+
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: ". headerLink1 headerLink2 headerLink3 headerLink4";
+}
+.headerLinks > ul li {
+  font-size: 16px;
+}
+#headerLink1 {
+  grid-area: headerLink1;
+}
+#headerLink2 {
+  grid-area: headerLink2;
+}
+#headerLink3 {
+  grid-area: headerLink3;
+}
+#headerLink4 {
+  grid-area: headerLink4;
+}
+.sidebar {
+  grid-area: sidebar;
+  background-color: rgb(179, 1, 1);
+
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+
+  gap: 50px;
+}
+.sidebar > .sidebarItems {
+  background-color: rgb(255, 225, 187);
+  margin: 10px;
+  color: black;
+  font-size: 16px;
+
+  display: grid;
+  place-items: center;
+}
+.sidebar > #placeholderImage {
+  border-radius: 10px;
+  background-color: rgb(77, 77, 77);
+  color: white;
+
+  
+}
+.menubar {
+  grid-area: menubar;
+  background-color: rgb(179, 1, 1);
+  font-size: 16px;
+}
+.menubar > ul {
+  margin: 0%;
+  height: 100%;
+  list-style-type: none;
+
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+.article {
+  grid-area: article;
+  background-color: rgb(159, 208, 236);
+}
+.article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.article > .artical-div {
+  height: 200px;
+  background-color: white;
+  font-size: 70%;
+  color: black;
+  font-weight: 500;
+  padding: 5px;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+.article-div > h3 {
+  text-align: center;
+}
+.article > .artical-div > p{
+    text-align: left;
+}
+.footer {
+  grid-area: footer;
+  background-color: rgb(77, 77, 77);
+  font-size: 13px;
+}
