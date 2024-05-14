@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ANIMATIONS</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            position: relative;
+
+            display: grid;
+            place-items: center;
+
+            animation-name: firstAnim;
+            animation-duration: 2s;
+            /*animation-delay: 2s;*/
+            /*animation-iteration-count: 5;*/
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes firstAnim {
+            0% {background-color: red; top: 0px; left: 0px;}
+            25% {background-color: orange;top: 0px; left: 200px;}
+            50% {background-color: yellow; top: 200px; left: 200px;}
+            75% {background-color: green; color: #fff; top: 200px; left: 0px;}
+            100% {background-color: blue; color: #fff; top: 0px; left: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS amimations bitch!</h3>
+    <div>PK98</div>
+</body>
+</html>
