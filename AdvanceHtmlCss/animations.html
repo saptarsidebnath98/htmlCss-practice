@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <style>
+      .circle, .circle2 {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        background-color: red;
+        border: 2px solid black;
+        display: inline-block;
+
+        animation-duration: 5s;
+        
+        animation-iteration-count:infinite;
+        animation-direction: alternate;
+      }
+      .circle{
+          position: absolute;
+          top: 200px;
+          left: 200px;
+          animation-name: change-color1;
+      }
+      .eye{
+          background-color: black;
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+          position: relative;
+          top: 10px;
+          left: 30px;
+
+
+        animation-duration: 5s;
+        animation-name: eyeball;
+        animation-iteration-count:infinite;
+        animation-direction: alternate;
+          
+        }
+
+        @keyframes eyeball {
+            0%{
+                top: 10px;
+                left: 30px;
+            }
+            50%{
+                top: 30px;
+                left: 60px;
+            }
+            100%{
+                top: 60px;
+                left: 90px;
+            }
+        }
+      .circle2{
+          position: absolute;
+          top: 200px;
+          right: 200px;
+          animation-name: change-color2;
+      }
+      @keyframes change-color1{
+        from {
+          background-color: red;
+        }
+        50%{
+            transform: scale(2);
+            background-color: orange;
+            left: 400px;
+        }
+        to {
+          background-color: green;
+        }
+      }
+      @keyframes change-color2{
+        from {
+          background-color: red;
+        }
+        50%{
+            transform: scale(2);
+            background-color: orange;
+            right: 400px;
+        }
+        to {
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle">
+        <div class="eye"></div>
+    </div>
+    <div class="circle2">
+        <div class="eye"></div>
+    </div>
+  </body>
+</html>

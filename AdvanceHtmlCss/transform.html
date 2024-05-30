@@ -6,18 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transform</title>
     <style>
-        div{
-            height: 200px;
-            width: 200px;
-            background-color: red;
+        body{
+            height: 100vh;
+            width: 100vw;
             display: grid;
             place-items: center;
-
-            transform: rotate();
+            background-color: darkslategray;
+        }
+        .outter-div{
+            height: 300px;
+            width: 300px;
+            background-color: darkred;
+            
+        }
+        .inner-div{
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+            transform: translate(-20px, 30%); 
         }
     </style>
 </head>
 <body>
-    <div>PK98</div>
+    <div class="outter-div">
+        <div class="inner-div"></div>
+    </div>
 </body>
 </html>
