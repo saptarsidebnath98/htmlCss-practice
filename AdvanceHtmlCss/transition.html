@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>transition</title>
     <style>
+        body{
+          background: linear-gradient(to right, red, blue);
+        }
         #transition-container {
             width: 100%;
             height: 100%;
@@ -23,11 +26,42 @@
             background-color: white;
             color: white;
             transition: background-color 1s ease-out 0.25s;
+            /*transition: color 3s ease-out 1;*/
           }
           
           button:hover {
-            background-color: black;
+           background-color: black;
+           /* color: black; */
             cursor: pointer;
+          }
+          ul{
+            list-style-type: none;
+          }
+          #menu{
+            height: 200px;
+            width: 200px;
+            border-radius: 10px;
+            border:2px solid white ;
+
+            background: linear-gradient(to right, blue, red);
+            transition: transform 2s 1s;
+          }
+          #menu ul{
+            height: 90%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            padding: 0%;
+          }
+          #menu:hover{
+            background-color: white;
+            color: black;
+            font-weight: 600;
+            transform: rotate(180deg);
           }
     </style>
 </head>
@@ -36,5 +70,26 @@
         <button>Transition!</button>
         <p>Hover your mouse over the rectangle abovee!</p>
     </div>
+    <div id="menu">
+      <ul>
+        <li>NOON</li>
+        <li>SWIMS</li>
+        <li>ZOOM</li>
+      </ul>
+    </div>
+    <script>
+      const btn = document.querySelector('button');
+      const menu = document.querySelector('#menu');
+
+      btn.addEventListener('click', () => {
+        if( menu.style.display !== "none"){
+          menu.style.display = "none";
+        }else{
+          menu.style.display = "block";
+        }
+        
+      console.log("btn was clicked");
+      })
+    </script>
 </body>
 </html>
