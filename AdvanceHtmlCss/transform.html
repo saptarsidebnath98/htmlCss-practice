@@ -11,19 +11,29 @@
             width: 100vw;
             display: grid;
             place-items: center;
-            background-color: darkslategray;
+            background: linear-gradient(45deg, red, blue);
         }
         .outter-div{
             height: 300px;
             width: 300px;
             background-color: darkred;
+            border: 2px solid black;
             
         }
         .inner-div{
             height: 150px;
             width: 150px;
-            background-color: blue;
-            transform: translate(-20px, 30%); 
+            background-color: yellow;
+            border: 2px solid black;
+            /*transform: skewX(45deg);*/
+            /*transform: skewY(0.5rad);*/
+            /*transform: skew(45deg, -0.5rad);*/
+           /* transform: translateY(-33%);*/
+           /*transform: translate(20px, -33%);*/
+           /*transform: rotate(45deg) translate(200%);*/
+           /*transform: translate(200%) rotate(45deg);*/
+          /* transform: perspective(100px) translateZ(30px);*/
+          transform: perspective(100px) translateZ(-200px);
         }
     </style>
 </head>
