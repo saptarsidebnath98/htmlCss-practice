@@ -42,7 +42,7 @@
             width: 200px;
             border-radius: 10px;
             border:2px solid white ;
-
+            display: none;
             background: linear-gradient(to right, blue, red);
             transition: transform 2s 1s;
           }
@@ -82,10 +82,10 @@
       const menu = document.querySelector('#menu');
 
       btn.addEventListener('click', () => {
-        if( menu.style.display !== "none"){
-          menu.style.display = "none";
-        }else{
+        if( menu.style.display !== "block"){
           menu.style.display = "block";
+        }else{
+          menu.style.display = "none";
         }
         
       console.log("btn was clicked");
