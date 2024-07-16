@@ -5,9 +5,11 @@ body{
 .parent{
     background-color: darkblue;
     padding: 50px;
+    width: 80%;
+    margin: 0 auto;
 }
 .child{
     background-color: skyblue;
     height: 250px;
-    width: 80%;
+    
 }
