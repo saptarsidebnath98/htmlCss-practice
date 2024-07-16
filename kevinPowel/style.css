@@ -1,0 +1,13 @@
+body{
+    margin: 0%;
+}
+
+.parent{
+    background-color: darkblue;
+    padding: 50px;
+}
+.child{
+    background-color: skyblue;
+    height: 250px;
+    width: 80%;
+}
