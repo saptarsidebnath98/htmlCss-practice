@@ -1,37 +1,37 @@
-/* INSTRUCTIONS
- *
- * 1) Limit the total width of
- *    the .intro-conent to about half
- *    of it's parent
- *
- * 2) Stop the text from overflowing
- *    out the bottom at small screen
- *    widths
- *
- * You may modify the HTML if needed
- *
- */
-
-* {
+*{
+  margin: 0%;
+}
+body{
   box-sizing: border-box;
+  font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-body {
-  margin: 0;
-  font-family: sans-serif;
+.container{
+  background-color: rgb(0, 102, 102);
+  padding: 60px;
 }
 
-.container {
-  background: #23424a;
-  color: white;
-
-  width: 80%;
+.intro-container{
   max-width: 750px;
-  margin: 0 auto;
-
-  padding: 2em;
-}
-
-.intro-content{
   width: 50%;
 }
+
+h1{
+  color: white;
+  margin-bottom: 20px;
+}
+p{
+  margin-bottom: 20px;
+  color: rgb(177, 177, 177);
+}
+button{
+  margin: 30px 0px;
+  padding: 15px 30px;
+  background-color: cornflowerblue;
+  font-weight: 800;
+  font-size: 25px;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
