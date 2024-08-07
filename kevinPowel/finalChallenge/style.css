@@ -140,3 +140,96 @@ nav{
     font-size: 18px;
     color: #3B4050;
 }
+
+/* section-three */
+.section-three{
+    padding: 50px 0px;
+}
+.section-three-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.sec-three-primary{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 21px;
+}
+.sec-three-primary img{
+    width: 100%;
+}
+.sec-three-primary h3{
+    font-family: "Oswald", sans-serif;
+    color: #A59678;
+    font-size: 36px;
+}
+
+.sec-three-secondary{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.sec-three-secondary div{
+    background-color: #3B4050;
+    padding: 50px 30px;
+}
+.sec-three-secondary h3{
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+/* footer */
+footer{
+    background-color: #3B4050;
+    padding: 100px 0px;
+    text-align: center;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    gap: 20px;
+}
+.footer>h1{
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+}
+.footer-content{
+    color: #6F737F;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+.footer-content h3{
+    font-family: "Oswald", sans-serif;
+    font-size: 21px;
+    color: #A59678;
+    margin-bottom: 20px;
+}
+.footer-content ul{
+    list-style-type: none;
+    padding: 0%;
+}
+
+.footer-content ul li{
+    margin-bottom: 10px;
+}
+.footer-content ul li:hover{
+    color: #FFFFFF;
+}
+
+.coder>a{
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+}
