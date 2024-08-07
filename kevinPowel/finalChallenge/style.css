@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+nav{
+    background-color: #2E323F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+    font-family: "Oswald", sans-serif;
+    position: relative;
+}
+.nav-list-div{
+    display: none;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 0%;
+    
+}
+nav>img{
+    margin-bottom: 20px;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.sign-up-btn{
+    font-family: "Oswald", sans-serif;
+    background-color: #A59678;
+    padding: 10px 20px;
+    color: #FFFFFF;
+}
+
+.menu-bar-btn{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    background-color: #2E323F;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.displayNone{
+    display: flex;
+}
