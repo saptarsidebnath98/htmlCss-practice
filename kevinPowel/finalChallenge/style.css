@@ -8,6 +8,13 @@ body{
     margin: 0%;
     font-family: "Montserrat", serif;
 }
+/* important */
+
+.container{
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
 
 /* navbar */
 nav{
@@ -22,6 +29,10 @@ nav{
 }
 .nav-list-div{
     display: none;
+}
+
+.displayNone{
+    display: flex;
 }
 
 .nav-list{
@@ -39,6 +50,12 @@ nav{
 .nav-items a{
     text-decoration: none;
     color: #FFFFFF;
+}
+.nav-items a:hover{
+    color: #A59678;
+}
+.nav-items:first-child{
+    margin-top: 20px;
 }
 
 .sign-up-btn{
@@ -60,20 +77,44 @@ nav{
     cursor: pointer;
 }
 
-.displayNone{
-    display: flex;
-}
+
 
 /* section-one */
 
 .section-one{
     background-color: #3B4050;
     color: #FFFFFF;
-    padding: 100px 30px;
+    padding: 50px 0px;
+    text-align: center;
 }
-.section-one>h1{
-    font-size: 40px;
+.section-one-container{
+    display: flex;
+    flex-direction: column;
 }
-.section-one>h1>span{
+.section-one-container>h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.section-one-container>h1>span{
     color: #A59678;
+}
+.sec-one-secondary{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.sec-one-btn{
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: #A59678;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    border-radius: 30px;
+    border: none;
 }
