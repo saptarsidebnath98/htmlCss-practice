@@ -1,0 +1,33 @@
+@import "var";
+@import "mixin";
+
+//operators
+//variables
+//nesting (&)
+//mixing
+//parameters
+
+html{
+    font-size: 62.5%;
+}
+
+.main_header{
+    @include flexProp;
+    h1{
+        color: red;
+        &:hover{
+            color: green;
+        }
+        &::after{
+            content: "PK98";
+        }
+    }
+    p{
+        font-size: 5rem;
+        background-color: $bg-color;
+        color: yellow;
+    }
+}
+.secondary{
+    @include flexProp(row);
+}
