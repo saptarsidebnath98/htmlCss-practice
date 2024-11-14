@@ -92,7 +92,7 @@ nav{
     flex-direction: column;
 }
 .section-one-container>h1{
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 50px;
 }
 .section-one-container>h1>span{
@@ -232,4 +232,7 @@ footer{
     cursor: pointer;
     font-family: "Oswald", sans-serif;
     font-size: 24px;
+}
+.coder>a:hover{
+    color: #A59678;
 }
